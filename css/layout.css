@@ -1,0 +1,30 @@
+/* NOTE this is the only custom thing that you'd have to opt-in to */
+
+/*
+    Options:
+    data-layout="center"
+*/
+
+[data-layout] {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    /*justify-content: flex-start;*/
+}
+
+[data-layout] > *,
+[data-layout] > * > *:first-child {
+    margin-top: 0;
+}
+[data-layout] > * + * {
+    padding-left: 2rem;
+}
+
+[data-layout*="center"] {
+    justify-content: center;
+}
+
+
+[data-layout] > aside {
+    flex-basis: 25%;
+}

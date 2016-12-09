@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Calaca CSS</title>
+  <meta name="description" content="Calaca CSS: Adding some style to bare bones.">
+  <meta name="author" content="Isaac Chansky">
+
+  <link rel="stylesheet" href="calaca.css?v=1.0">
+</head>
+
+<body>
+
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+
+<p>Lorem ipsum dolor sit amet, <a href="/calaca.css">consectetur adipisicing elit</a>. Quibusdam tempore, quas excepturi, perspiciatis saepe voluptatibus, expedita repellat eaque atque nesciunt debitis quos cum. Sint quibusdam eos inventore consequuntur, nostrum doloremque.</p>
+
+<hr>
+
+<p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing elit</em>. Dicta, illo aliquam molestias, ex <strong>aspernatur atque</strong> natus necessitatibus tempore assumenda sint deserunt quae consequatur veniam cum ratione harum ipsa! Reprehenderit, cupiditate!</p>
+
+
+<ul>
+  <li>Item 1</li>
+  <li>
+    Item 2
+    <ul>
+      <li>Item 2.1</li>
+      <li>Item 2.2</li>
+    </ul>
+  </li>
+  <li>Item 3</li>
+</ul>
+
+<ol>
+  <li>Item 1</li>
+  <li>
+    Item 2
+    <ol>
+      <li>Item 2.1</li>
+      <li>Item 2.2</li>
+    </ol>
+  </li>
+  <li>Item 3</li>
+</ol>
+
+<ol>
+  <li>Item 1</li>
+  <li>
+    Item 2
+    <ul>
+      <li>Item 2.1</li>
+      <li>Item 2.2</li>
+    </ul>
+  </li>
+  <li>Item 3</li>
+</ol>
+
+<pre><code>/* block of code */
+body {
+  color: #222222;
+}</code></pre>
+<p>Here is some <code> /* inline code */</code>.</p>
+
+
+
+<form>
+  <label for="exampleEmailInput">Your email</label>
+  <input type="email" id="exampleEmailInput">
+
+  <label for="disabledTextInput">Disabled input</label>
+  <input type="text" id="disabledTextInput" placeholder="Disabled input" disabled>
+
+  <label for="exampleRecipientInput">Reason for contacting</label>
+  <select id="exampleRecipientInput">
+    <option value="Option 1">Questions</option>
+    <option value="Option 2">Admiration</option>
+    <option value="Option 3">Can I get your number?</option>
+  </select>
+
+  <label for="exampleMultipleSelect">Which one(s)?</label>
+  <select multiple id="exampleMultipleSelect">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+  </select>
+
+  <label for="exampleMessage">Message</label>
+  <textarea id="exampleMessage"></textarea>
+
+  <label class="example-send-yourself-copy">
+    <input type="checkbox"> Send yourself a Copy
+  </label>
+
+  <label for="exampleInputFile">File input</label>
+  <input type="file" id="exampleInputFile">
+  <p >Example block-level help text here.</p>
+
+
+
+  <input type="submit" value="Input type submit">
+
+</form>
+
+<input type="button" value="Input type button">
+<button>Button tag</button>
+<a role="button" tabindex="0">Anchor role button</a>
+
+
+<img src="http://placehold.it/200x200" alt="an image">
+
+
+<table cellspacing="0" summary="Color names for black, white, red, blue, green, yellow in multiple languages">
+  <caption align="bottom">Color Names in Multiple Languages </caption>
+  <tbody>
+    <tr>
+      <th scope="col">Color</th>
+      <th scope="col">Spanish</th>
+      <th scope="col">French</th>
+      <th scope="col">Irish</th>
+      <th scope="col">Welsh</th>
+    </tr>
+    <tr>
+      <th scope="row">Black</th>
+      <td>negro</td>
+      <td>noir</td>
+      <td>dubh</td>
+      <td>du</td>
+    </tr>
+    <tr>
+      <th scope="row">White</th>
+      <td>blanco</td>
+      <td>blanc</td>
+      <td>bán</td>
+      <td>gwyn</td>
+    </tr>
+    <tr>
+      <th scope="row">Red</th>
+      <td>rojo</td>
+      <td>rouge</td>
+      <td>ruadh</td>
+      <td>coch</td>
+    </tr>
+    <tr>
+      <th scope="row">Blue</th>
+      <td>azul</td>
+      <td>bleu</td>
+      <td>gorm</td>
+      <td>glas</td>
+    </tr>
+    <tr>
+      <th scope="row">Green</th>
+      <td>verde</td>
+      <td>vert</td>
+      <td>glas</td>
+      <td>gwyrdd</td>
+    </tr>
+    <tr>
+      <th scope="row">Yellow</th>
+      <td>amarillo</td>
+      <td>jaune</td>
+      <td>buí</td>
+      <td>melyn</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+<figure>
+  <img src="http://placehold.it/400x200" alt="">
+  <figcaption>Just one image.</figcaption>
+</figure>
+
+<figure>
+  <img src="http://placehold.it/100x100" alt="">
+  <img src="http://placehold.it/100x100" alt="">
+  <img src="http://placehold.it/100x100" alt="">
+  <figcaption>A few images</figcaption>
+</figure>
+
+
+
+<h1>Layout Things</h1>
+
+
+<section data-layout>
+  <div>
+    <h1>This is the main content</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea sequi eos, est, magni architecto eius vel porro ratione! Ex obcaecati ullam culpa quisquam, modi accusantium odit id nulla amet ratione.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis necessitatibus autem veritatis nam est, delectus pariatur harum distinctio, cupiditate eaque, dolorum dolore consequatur. Incidunt pariatur nemo perferendis possimus esse necessitatibus.</p>
+  </div>
+  <aside>
+    <h2>Other content</h2>
+    <p>This is less important</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error veniam amet tempora, odio nihil sed ea beatae quis quod cupiditate ducimus facere, ab eum officia impedit sunt inventore deleniti quisquam!</p>
+  </aside>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+

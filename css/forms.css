@@ -1,0 +1,64 @@
+/* Forms */
+
+form * {
+    display: block;
+}
+
+input,
+textarea {
+    font-size: 1rem;
+}
+
+label input {
+    display: inline-block;
+}
+input:not([type="submit"]):not([type="button"]),
+textarea {
+    padding: 0.5em;
+}
+input:not([type="submit"]):not([type="button"]),
+textarea,
+select {
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+button,
+a[role="button"],
+input[type="file"],
+input[type="submit"],
+input[type="button"] {
+    border: none;
+    text-decoration: none;
+    border-radius: 2px;
+    padding: 0.5em 1.5em;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+input[disabled] {
+    cursor: not-allowed;
+}
+
+label + input,
+label + textarea,
+label + select {
+    margin-top: 0.25em;
+}
+
+select {
+    font-size: 1rem;
+    background: #fff;
+}
+
+select[multiple] {
+    min-width: 3rem;
+}
+select[multiple] option {
+    padding: 0.25em 0.5em;
+    margin: 0;
+}
+
+form p {
+    font-size: 0.75rem;
+}

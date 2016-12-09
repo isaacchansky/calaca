@@ -1,0 +1,21 @@
+body {
+    margin: 0 1rem;
+}
+
+body * + * {
+    margin-top: 1em;
+}
+
+
+body * {
+    margin-bottom: 0;
+}
+body > *:first-child {
+    margin-top: 0;
+}
+
+
+*:focus {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}

@@ -1,0 +1,57 @@
+/*
+    Colors
+
+    dark: #333
+    darkgrey: #aaa
+    grey: #ccc
+    white: #fff
+    blue: #1e93b7
+    dark-blue: #0081a2
+
+*/
+
+body {
+    color: #333;
+}
+
+a:not([role="button"]) {
+    color: #1e93b7;
+    font-weight: bold;
+}
+a:not([role="button"]):hover {
+    color: #0081a2;
+}
+
+input[type="submit"] {
+    background: #1EAEDB;
+    color: #FFFFFF;
+}
+input[type="submit"]:hover {
+    background: #1e93b7;
+}
+
+input[type="button"] {
+    background: #ccc;
+    color: #333;
+}
+input[type="button"]:hover {
+    background: #aaa;
+}
+
+button,
+a[role="button"] {
+    background: #333;
+    color: #fff;
+}
+button:hover,
+a[role="button"]:hover {
+    background: #111;
+}
+
+code {
+    background: #eee;
+}
+
+input[disabled] {
+    background: #eee;
+}
