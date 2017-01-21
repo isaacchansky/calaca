@@ -1,0 +1,29 @@
+body > header > span {
+    font-weight: 100;
+}
+
+body > header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+body > header nav {
+    flex-basis: 75%;
+}
+
+body > header nav > ul {
+    padding-left: 0;
+    margin-top: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+body > header nav > ul a {
+    color: #fff;
+}
+
+body > header nav > ul a:hover {
+    color: #fff;
+}

@@ -17,3 +17,7 @@ caption {
     font-size: 0.75rem;
     padding: 0.25em;
 }
+
+tr:nth-child(even) {
+    background: #eee;
+}

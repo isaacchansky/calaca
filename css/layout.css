@@ -7,7 +7,7 @@
 
 [data-layout] {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: stretch;
     /*justify-content: flex-start;*/
 }
@@ -16,8 +16,9 @@
 [data-layout] > * > *:first-child {
     margin-top: 0;
 }
+
 [data-layout] > * + * {
-    padding-left: 2rem;
+    padding-top: 2rem;
 }
 
 [data-layout*="center"] {
@@ -27,4 +28,16 @@
 
 [data-layout] > aside {
     flex-basis: 25%;
+}
+
+@media screen and (min-width: 955px) {
+
+    [data-layout]  {
+        flex-direction: row;
+    }
+    [data-layout] > * + * {
+        padding-top: 0;
+        padding-left: 2rem;
+    }
+
 }

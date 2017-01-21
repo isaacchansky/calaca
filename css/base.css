@@ -1,8 +1,17 @@
 body {
+    margin: 0;
+}
+
+body > *:not(header):not(footer) {
     margin: 0 1rem;
 }
 
-body * + * {
+body > header,
+body > footer {
+    padding: 1rem;
+}
+
+body main * + * {
     margin-top: 1em;
 }
 
